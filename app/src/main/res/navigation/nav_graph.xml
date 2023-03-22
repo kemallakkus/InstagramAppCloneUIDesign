@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/flowFragment2">
+
+    <fragment
+        android:id="@+id/flowFragment2"
+        android:name="com.kemalakkus.instagramappclone.fragments.FlowFragment"
+        android:label="fragment_flow"
+        tools:layout="@layout/fragment_flow" >
+        <action
+            android:id="@+id/action_flowFragment2_to_postFragment2"
+            app:destination="@id/postFragment2" />
+        <action
+            android:id="@+id/action_flowFragment2_to_searchFragment3"
+            app:destination="@id/searchFragment3" />
+        <action
+            android:id="@+id/action_flowFragment2_to_notificationsFragment2"
+            app:destination="@id/notificationsFragment2" />
+        <action
+            android:id="@+id/action_flowFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+        <action
+            android:id="@+id/action_flowFragment2_to_storyFragment"
+            app:destination="@id/storyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment3"
+        android:name="com.kemalakkus.instagramappclone.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment3_to_flowFragment2"
+            app:destination="@id/flowFragment2" />
+        <action
+            android:id="@+id/action_searchFragment3_to_postFragment2"
+            app:destination="@id/postFragment2" />
+        <action
+            android:id="@+id/action_searchFragment3_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+        <action
+            android:id="@+id/action_searchFragment3_to_notificationsFragment2"
+            app:destination="@id/notificationsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment2"
+        android:name="com.kemalakkus.instagramappclone.fragments.PostFragment"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postFragment2_to_flowFragment2"
+            app:destination="@id/flowFragment2" />
+        <action
+            android:id="@+id/action_postFragment2_to_notificationsFragment2"
+            app:destination="@id/notificationsFragment2" />
+        <action
+            android:id="@+id/action_postFragment2_to_searchFragment3"
+            app:destination="@id/searchFragment3" />
+        <action
+            android:id="@+id/action_postFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment2"
+        android:name="com.kemalakkus.instagramappclone.fragments.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_notificationsFragment2_to_flowFragment2"
+            app:destination="@id/flowFragment2" />
+        <action
+            android:id="@+id/action_notificationsFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+        <action
+            android:id="@+id/action_notificationsFragment2_to_postFragment2"
+            app:destination="@id/postFragment2" />
+        <action
+            android:id="@+id/action_notificationsFragment2_to_searchFragment3"
+            app:destination="@id/searchFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.kemalakkus.instagramappclone.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_flowFragment2"
+            app:destination="@id/flowFragment2" />
+        <action
+            android:id="@+id/action_profileFragment2_to_notificationsFragment2"
+            app:destination="@id/notificationsFragment2" />
+        <action
+            android:id="@+id/action_profileFragment2_to_searchFragment3"
+            app:destination="@id/searchFragment3" />
+        <action
+            android:id="@+id/action_profileFragment2_to_postFragment2"
+            app:destination="@id/postFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyFragment"
+        android:name="com.kemalakkus.instagramappclone.fragments.StoryFragment"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_story" >
+        <action
+            android:id="@+id/action_storyFragment_to_flowFragment2"
+            app:destination="@id/flowFragment2" />
+    </fragment>
+</navigation>

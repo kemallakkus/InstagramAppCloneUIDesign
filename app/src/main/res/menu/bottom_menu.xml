@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Flow"
+        android:icon="@drawable/flow_selector"
+        android:id="@+id/flowFragment2"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="Search"
+        android:icon="@drawable/search_selector"
+        android:id="@+id/searchFragment3"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="Add Post"
+        android:icon="@drawable/ic_add_post"
+        android:id="@+id/postFragment2"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="Liked"
+        android:icon="@drawable/notification_selector"
+        android:id="@+id/notificationsFragment2"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="Profile"
+        android:icon="@drawable/profile_selector"
+        android:id="@+id/profileFragment2"
+        app:showAsAction="ifRoom"/>
+
+</menu>

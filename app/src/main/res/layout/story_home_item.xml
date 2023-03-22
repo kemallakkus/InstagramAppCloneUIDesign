@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_6dp"
+    android:layout_marginTop="-10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/story_photo_background"
+        android:layout_width="@dimen/story_width_background"
+        android:layout_height="@dimen/story_height_background"
+        android:layout_gravity="center"
+        android:padding="@dimen/story_padding"
+        android:background="@drawable/story_background"
+        android:src="@drawable/story_background"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/Circular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/story_photo"
+        android:layout_width="@dimen/story_width"
+        android:layout_height="@dimen/story_height"
+        android:layout_gravity="center"
+        android:padding="@dimen/margin_6dp"
+        android:background="@drawable/story_background"
+        android:src="@drawable/kemalppgithub"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/Circular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/story_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/story_text_size"
+        android:text="Kemal Akkuş"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/story_photo_background"
+        app:layout_constraintTop_toBottomOf="@id/story_photo_background"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
