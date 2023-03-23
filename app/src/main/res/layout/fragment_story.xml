@@ -75,7 +75,7 @@
             android:layout_width="@dimen/margin_35dp"
             android:layout_height="@dimen/margin_35dp"
             android:padding="@dimen/margin_3dp"
-            android:src="@drawable/behzat"
+            android:src="@drawable/mariecurie"
             android:scaleType="centerCrop"
             app:shapeAppearanceOverlay="@style/Circular"/>
 
